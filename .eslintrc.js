@@ -1,9 +1,9 @@
 module.exports = {
-  extends: [
-    '@mate-academy/eslint-config-react-typescript',
-    'plugin:react/recommended',
-  ],
+  extends: ['@mate-academy/eslint-config-react-typescript', 'plugin:react/recommended'],
   rules: {
+    'react/no-array-index-key': 0,
+    'linebreak-style': 0,
+
     // React
     'react/prop-types': 0,
     'react/self-closing-comp': 0,
@@ -22,7 +22,5 @@ module.exports = {
     '@typescript-eslint/semi': ['error'],
   },
   parser: '@typescript-eslint/parser',
-  plugins: [
-    '@typescript-eslint',
-  ],
+  plugins: ['@typescript-eslint'],
 };
